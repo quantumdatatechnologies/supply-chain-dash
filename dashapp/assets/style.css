@@ -1027,3 +1027,46 @@ padding-right:50px;
 padding-bottom: 15px;
 top: 25px;
 }
+
+
+.single_select {
+    color: var(--dd_text) !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    border-radius: 0.5rem !important;
+    background-color: var(--dd_bgCard) !important;
+    font-size: 0.75rem !important;
+
+}
+
+.single_select .Select-control .Select-value {
+    background-color: var(--card_header_bg) !important;
+}
+
+.single_select .Select-control{
+    background-color: var(--dd_bgCard) !important;
+    border-color: var(--dd_border) !important;
+    }
+
+.single_select .Select-value-label {
+    color: var(--dd_select_text) !important;
+}
+
+
+.single_select .Select .VirtualizedSelectFocusedOption {
+    background-color: #00A1E1 !important;
+}
+
+
+
+.single_select .VirtualizedSelectOption {
+    background-color: var(--dd_bgCard) !important;
+    color: var(--dd_text) !important;
+    font-size:0.7rem;
+ }
+
+.single_select .VirtualizedSelectOption:hover {
+    background-color: #00A1E1 !important;
+    color: var(--dd_select_text) !important;
+
+ }
