@@ -118,7 +118,7 @@ import plotly.colors as pc
 
 def get_sankey_data(pathing_df, selected_data='2024-01-26'):
     pathing_df['snapshot_date'] = pd.to_datetime(pathing_df['snapshot_date'])
-    sankey_df = pathing_df[pathing_df['snapshot_date'] == np.datetime64('2024-01-26')]
+    sankey_df = pathing_df[pathing_df['snapshot_date'] == np.datetime64(selected_data)]
 
     # sankey_df = sankey_df.groupby(['source_location', 'destination_location'])[['in_transit']].sum().reset_index()
     sankey_df = sankey_df[sankey_df['material_number'].isin(material_numbers)].groupby(

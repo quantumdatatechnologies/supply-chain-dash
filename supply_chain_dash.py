@@ -18,6 +18,7 @@ app.layout = app_layout
 app.config.suppress_callback_exceptions = True
 
 register_appshell_callbacks(app)
+register_pathing_callbacks(app)
 
 if __name__ == '__main__':
     app.run_server(debug=False, port=8052, host='0.0.0.0', threaded=True)
